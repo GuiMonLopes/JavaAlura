@@ -6,9 +6,9 @@ import classes.Conta;
 public class TestaGetSet {
 	
 	public static void main(String[] args) {
-		Conta conta = new Conta();
-		conta.setNumero(1337);
-		System.out.println(conta.getNumero());
+		Conta conta = new Conta(1337, 24226);
+		//conta.setNumero(1337);
+		//System.out.println(conta.getNumero());
 		
 		Cliente paulo = new Cliente();
 		//conta.titular = paulo;
