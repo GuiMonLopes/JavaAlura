@@ -1,8 +1,8 @@
 package programas;
 
 import classes.ControleBonificacao;
+import classes.Designer;
 import classes.EditorVideo;
-import classes.Funcionario;
 import classes.Gerente;
 
 public class TesteReferencia {
@@ -13,15 +13,15 @@ public class TesteReferencia {
          g1.setNome("Marcos");
          g1.setSalario(5000.0);
 
-         Funcionario f = new Funcionario();
-         f.setSalario(2000.0);
+         Designer d = new Designer();
+         d.setSalario(2000.0);
 
          EditorVideo ev = new EditorVideo();
          ev.setSalario(2500.0);
 
          ControleBonificacao controle = new ControleBonificacao();
          controle.controleBonificacao(g1);
-         controle.controleBonificacao(f);
+         controle.controleBonificacao(d);
          controle.controleBonificacao(ev);
 
          System.out.println(controle.getSoma());
