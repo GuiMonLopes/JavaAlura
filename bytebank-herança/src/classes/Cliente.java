@@ -1,14 +1,11 @@
 package classes;
 
-public class Gerente extends Funcionario implements Autenticavel{
+public class Cliente implements Autenticavel {
 	
 	private int senha;
-
 	
-	@Override
-	public double getBonificacao() {
-		System.out.println("Gerente");
-		return super.getSalario();
+	public void teste() {
+		
 	}
 
 	@Override
@@ -25,7 +22,7 @@ public class Gerente extends Funcionario implements Autenticavel{
 		this.senha = senha;
 		
 	}
-	
-	
+
+
 
 }
