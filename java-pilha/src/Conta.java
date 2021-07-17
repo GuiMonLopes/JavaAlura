@@ -1,16 +1,8 @@
 
 public class Conta {
-	    public static void main(String[] args) {
 
-	        String nome = "Alura";
-	        System.out.println("ANTES");
+	void deposita() throws MinhaExcecao {
 
-	        try {
-	            System.out.println(nome);
-	        } catch(ArrayIndexOutOfBoundsException ex) {
-	            System.out.println("CATCH");
-	        }
+	}
 
-	        System.out.println("DEPOIS");
-	    }
 }

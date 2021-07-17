@@ -7,9 +7,9 @@ public class ContaCorrente extends Conta implements Tributaveis {
 	}
 	
 	@Override
-	public boolean sacar(double valor) {
+	public void sacar(double valor) throws SaldoInsuficienteException {
 		double valorSacar = valor + 0.20;
-		return super.sacar(valorSacar);
+		super.sacar(valorSacar);
 	}
 
 	@Override

@@ -9,6 +9,14 @@ public abstract class Conta {
 	private static int total;
 	
 	public Conta(int agencia, int numero) {
+		
+		if(agencia < 1) {
+            throw new IllegalArgumentException("Agencia inválida");
+        }
+
+        if(numero < 1) {
+            throw new IllegalArgumentException("Numero da conta inválido");
+        }
 		Conta.total++;
 		//System.out.println("O total de contas é "+Conta.total);
 		
@@ -19,22 +27,19 @@ public abstract class Conta {
 
 	public abstract void depositar(double valor);
 
-	public boolean sacar(double valor) {
-		if (this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
-		} else {
-			return false;
-		}
+	public void sacar(double valor) throws SaldoInsuficienteException {
+		
+		
+		if (this.saldo < valor) {
+			throw new SaldoInsuficienteException("Saldo: "+ this.saldo + ", Valor: "+ valor);
+		} 
+		
+		this.saldo -= valor;
 	}
 
-	public boolean transferir(double valor, Conta destino) {
-		if (this.sacar(valor)) {
-			destino.depositar(valor);
-			return true;
-		}
-		return false;
-
+	public void transferir(double valor, Conta destino) throws SaldoInsuficienteException {
+		this.sacar(valor);
+		destino.depositar(valor);
 		/*
 		 * if(this.saldo >= valor) { this.saldo-=valor; destino.depositar(valor); return
 		 * true; }else { return false; }
