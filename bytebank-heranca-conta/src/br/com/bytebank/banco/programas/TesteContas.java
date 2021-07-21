@@ -1,8 +1,8 @@
-package programas;
+package br.com.bytebank.banco.programas;
 
-import classes.ContaCorrente;
-import classes.ContaPoupanca;
-import classes.SaldoInsuficienteException;
+import br.com.bytebank.banco.classes.ContaCorrente;
+import br.com.bytebank.banco.classes.ContaPoupanca;
+import br.com.bytebank.banco.classes.SaldoInsuficienteException;
 
 public class TesteContas {
 

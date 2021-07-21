@@ -1,4 +1,4 @@
-package classes;
+package br.com.bytebank.banco.classes;
 
 public class ContaCorrente extends Conta implements Tributaveis {
 

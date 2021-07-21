@@ -1,8 +1,8 @@
-package programas;
+package br.com.bytebank.banco.programas;
 
-import classes.CalculadorDeImpostos;
-import classes.ContaCorrente;
-import classes.SeguroDeVIda;
+import br.com.bytebank.banco.classes.CalculadorDeImpostos;
+import br.com.bytebank.banco.classes.ContaCorrente;
+import br.com.bytebank.banco.classes.SeguroDeVIda;
 
 public class TesteTributaveis {
 

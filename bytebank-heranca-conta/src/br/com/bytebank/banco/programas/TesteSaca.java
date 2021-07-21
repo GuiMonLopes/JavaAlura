@@ -1,7 +1,7 @@
-package programas;
+package br.com.bytebank.banco.programas;
 
-import classes.Conta;
-import classes.ContaCorrente;
+import br.com.bytebank.banco.classes.Conta;
+import br.com.bytebank.banco.classes.ContaCorrente;
 
 
 public class TesteSaca {
