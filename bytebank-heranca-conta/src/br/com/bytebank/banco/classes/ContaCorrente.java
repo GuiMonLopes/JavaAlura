@@ -23,5 +23,10 @@ public class ContaCorrente extends Conta implements Tributaveis {
 		return super.saldo * 0.01;
 	}
 	
+	@Override
+	public String toString() {
+	    return "ContaCorrente, " + super.toString();
+	}
+	
 
 }
