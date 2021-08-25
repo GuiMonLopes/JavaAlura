@@ -1,6 +1,4 @@
-package br.com.bytebank.banco.classes;
-
-import java.io.Serializable;
+package br.com.alura.java.io.teste;
 
 /**
  * 
@@ -11,7 +9,10 @@ import java.io.Serializable;
  *
  */
 
-public class Cliente{
+public class Cliente implements java.io.Serializable {
+	
+
+	private static final long serialVersionUID = 9205117266306915548L;
 	
 	private String nome;
 	private String cpf;
