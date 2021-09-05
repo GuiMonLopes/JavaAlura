@@ -36,12 +36,11 @@ public class TestandoLista {
 			System.out.println("Percorrendo");
 			System.out.println("Aula " + aula);
 		});
-		
+
 		aulas.add("Aumentando o nosso conhecimento");
-		
+
 		Collections.sort(aulas);
 		System.out.println(aulas);
-		
 
 	}
 
