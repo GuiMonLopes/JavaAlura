@@ -13,6 +13,8 @@ import java.io.Serializable;
 
 public abstract class Conta extends Object implements Comparable<Conta>, Serializable {
 
+	private static final long serialVersionUID = 1L;
+	
 	protected double saldo;
 	private int agencia;
 	private int numero;
@@ -26,6 +28,7 @@ public abstract class Conta extends Object implements Comparable<Conta>, Seriali
 	 * @param agencia
 	 * @param numero
 	 */
+	
 
 	public Conta(int agencia, int numero) {
 
